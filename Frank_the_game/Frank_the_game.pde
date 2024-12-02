@@ -9,7 +9,7 @@ size(1280,720);
 /*m = new Wander(width/2,height/2);
 mouse = new Movement(width/2,height/2);*/
 for(int i=0; i<a.length; i++){
-a[i] = new Agent(i*10+100,i*5+100);}
+a[i] = new Agent(i+50,i+50);}
 }
 
 void draw(){
