@@ -1,22 +1,24 @@
 Movement m; // star of the game: frank!!
 Movement mouse;
-Agent a;
+Agent[] a = new Agent[100];
 
 boolean debug = true;
 
 void setup(){
-size(840,680);
-m = new Wander(width/2,height/2);
-mouse = new Movement(width/2,height/2);
-a = new Agent(100,100);
+size(1280,720);
+/*m = new Wander(width/2,height/2);
+mouse = new Movement(width/2,height/2);*/
+for(int i=0; i<a.length; i++){
+a[i] = new Agent(i*10+100,i*5+100);}
 }
 
 void draw(){
   background(255);
-  m.run();
+  /*m.run();
   mouse.seek(new PVector(mouseX, mouseY));
-  mouse.run();
-  a.update();
+  mouse.run();*/
+  for(int i=0; i<a.length; i++){
+  a[i].update();}
 }
 
 void mousePressed(){

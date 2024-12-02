@@ -1,5 +1,5 @@
 class Agent{
-Movement m;
+Wander m;
 
 Agent(float x, float y){
 m = new Wander(x,y);
