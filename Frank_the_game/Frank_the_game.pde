@@ -1,6 +1,6 @@
 Movement m; // star of the game: frank!!
 Movement mouse;
-Agent[] a = new Agent[100];
+Victim[] a = new Victim[100];
 
 boolean debug = true;
 
@@ -9,7 +9,7 @@ size(1280,720);
 /*m = new Wander(width/2,height/2);
 mouse = new Movement(width/2,height/2);*/
 for(int i=0; i<a.length; i++){
-a[i] = new Agent(i+50,i+50);}
+a[i] = new Victim(i+50,i+50);}
 }
 
 void draw(){
