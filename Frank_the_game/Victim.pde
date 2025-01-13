@@ -1,9 +1,9 @@
 class Victim extends Wander{
-  Wander m;
-  
+ Wander m;
+ boolean isDead;
+ 
  Victim (float x, float y){
  super(x,y);
- boolean isDead;
  m = new Wander(x,y);
  
  }
