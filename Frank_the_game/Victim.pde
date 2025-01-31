@@ -8,7 +8,7 @@ class Victim extends Wander{
  
  }
  
- void update(){
+ void updates(){
  m.run(); 
  }
 

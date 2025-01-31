@@ -70,10 +70,4 @@ class Movement{
     if (pos.y > height+r) pos.y = -r;
   }
     
-    void run(){ // Makes those propatices run in the program
-    update();
-    display();
-    borders();
-    }
-    
 }
