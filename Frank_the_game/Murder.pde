@@ -1,4 +1,4 @@
-class Murder extends Victim{
+class Murder extends Wander{
   Victim m;
   
   Murder (float x, float y){
@@ -7,14 +7,20 @@ class Murder extends Victim{
   }
 
 void draw(){
-display();
-    
+  updateM();
 }
 
 void display(){
-    fill(255, 255, 0);
+    fill(200, 0, 0);
     ellipse(pos.x, pos.y, 10,10);
     }
 
+
+   void updateM(){
+   wander();
+   update();
+   borders();
+   display();
+   }
 
 }

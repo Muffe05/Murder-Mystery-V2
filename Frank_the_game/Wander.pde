@@ -5,12 +5,6 @@ class Wander extends Movement{
 
 }
 
-   void run(){
-   wander();
-   update();
-   borders();
-   display();
-   }
   
   
   void wander() {

@@ -8,8 +8,12 @@ class Victim extends Wander{
  
  }
  
- void updates(){
- m.run(); 
+ void updateV(){
+ wander();
+ update();
+ borders();
+ display();
+ fill(0, 255, 0);
  }
 
   
