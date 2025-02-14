@@ -16,9 +16,10 @@ class Victim extends Wander{
  if (!breed) {
    wander(); 
  }
- else{
+ if(breed){
    seek(targetPosB());
-   if(dist(pos.x, pos.y, a.get(targetB).pos.y, a.get(targetB).pos.y) <= 2){
+   if (rng==1){newTargetB();}
+   if(dist(pos.x, pos.y, a.get(targetB).pos.x, a.get(targetB).pos.y) <= 2){
      breed=false;
      maxspeed = 3;
      maxforce = 0.5;

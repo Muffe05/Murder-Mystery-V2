@@ -10,10 +10,10 @@ void setup(){
 size(1280,720);
 /*m = new Wander(width/2,height/2);
 mouse = new Movement(width/2,height/2);*/
-for(int i=0; i<100; i++){
+for(int i=0; i<200; i++){
 a.add(new Victim(i+50,i+50));} //arraylist starts at 0 and then we add 100 element making the size 100
 
-for(int j=0; j<1; j++){
+for(int j=0; j<20; j++){
 b.add(new Murder(j+250,j+250));
 }
 }
