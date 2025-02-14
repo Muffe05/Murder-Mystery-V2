@@ -13,8 +13,8 @@ mouse = new Movement(width/2,height/2);*/
 for(int i=0; i<100; i++){
 a.add(new Victim(i+50,i+50));} //arraylist starts at 0 and then we add 100 element making the size 100
 
-for(int j=0; j<10; j++){
-b.add(new Murder(j+50,j+50));
+for(int j=0; j<1; j++){
+b.add(new Murder(j+250,j+250));
 }
 }
 
@@ -27,7 +27,10 @@ void draw(){
   for(int i=0; i<a.size(); i++){
   Victim part = a.get(i);
   part.updateV();
+  
 }
+
+print(a.size()+" ");
 
   for(int i=0; i<b.size(); i++){
   Murder parts = b.get(i);

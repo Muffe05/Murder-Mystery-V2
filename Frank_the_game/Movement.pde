@@ -27,12 +27,6 @@ class Movement{
      maxspeed = 3;
      maxforce = 0.05;
   }
-  
- 
-  void display(){
-    ellipse(pos.x, pos.y, 10,10);
-  }
-  
 
   void seek(PVector target) {
     PVector desired = PVector.sub(target,pos);  // A vector pointing from the position to the target
