@@ -27,10 +27,7 @@ void draw(){
   for(int i=0; i<a.size(); i++){
   Victim part = a.get(i);
   part.updateV();
-  
-}
-
-print(a.size()+" ");
+  }
 
   for(int i=0; i<b.size(); i++){
   Murder parts = b.get(i);

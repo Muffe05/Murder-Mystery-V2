@@ -13,10 +13,6 @@ class Murder extends Wander{
   maxforce = 0.65;
   }
 
-void draw(){
-  updateM();
-}
-
 void display(){
     fill(200, 0, 0);
     ellipse(pos.x, pos.y, 10,10);
@@ -41,13 +37,12 @@ void updateM(){
    }
    
    void newTargetV(){
-   if(a.size() != 0){
    targetV = (int)random(0,a.size());
    if(a.get(targetV).isDead){
      newTargetV(); }
    
    print(targetV+"V ");
-   }
+   
    }
    
 

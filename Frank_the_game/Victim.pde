@@ -1,10 +1,11 @@
 class Victim extends Wander{
  Wander m;
  boolean isDead = false;
- int targetB;
- PVector targetPosB;
  boolean breed = false;
- int rng = 1;
+ int targetB;
+ int rng = 2;
+ PVector targetPosB;
+
  
  Victim (float x, float y){
  super(x,y);
